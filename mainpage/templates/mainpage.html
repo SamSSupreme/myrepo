@@ -1,0 +1,270 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="http://127.0.0.1:8000/">Home</a></li>
+      <li><a href="/AllVideos/"> All Videos </a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/AllVideos/"> Video <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/AllVideos/get/2/">Eminem - Not Afraid</a></li>
+          <li><a href="/AllVideos/get/3/">
+Eminem - The Monster (Explicit) ft. Rihanna</a></li>
+          <li><a href="/AllVideos/get/4/">Eminem - Rap God (Explicit)</a></li>
+          <li><a href="/AllVideos/get/5/">
+Eminem - Lose Yourself [HD]</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/auth/login/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <h1> <p align="center"><b> EMINƎM -  Marshall Bruce Mathers III - Slim Shady</b> </p> </h1>
+  <p> <h2> “God gave you them shoes to fit you, so put them on and wear them. Be yourself man, be proud of who you are. Even if it sounds corny, don’t let no one tell you, you ain’t beautiful.”</h2></p>
+</div>
+
+</body>
+</html>
+
+
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Marshall Mathers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  </style>
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src = "{% static 'Eminem 1.jpg'%}" alt="EMINƎM" width="1500" height="700">
+        <div class="carousel-caption">
+          <h2 style="color:#29ff0c">EMINƎM</h2>
+            <p><h2 style="color:#29ff0c">Is an American rapper</h2></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="{% static 'Eminem 2.jpg'%}" alt="EMINƎM" width="1500" height="700">
+        <div class="carousel-caption">
+          <h2 style="color:#29ff0c">EMINƎM</h2>
+            <p><h2 style="color:#29ff0c">Is an American songwriter and actor</h2></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="{% static 'Eminem 3.jpg'%}" alt="EMINƎM" width="1500" height="700">
+        <div class="carousel-caption">
+          <h2 style="color:#29ff0c">EMINƎM</h2>
+            <p><h2 style="color:#29ff0c">Is an American record producer and record executive</h2></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container text-center">
+  <h1>EMINƎM</h1>
+    <p><em><h2>Discography</h2></em></p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Infinite (1996)</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="{% static '1.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+          <p><b>Genre</b>  Hip hop</p>
+          <p><b>Length</b>	37:54</p>
+          <p><b>Label</b> Web Entertainment</p>
+          <p><b>Producer</b> Eminem Jeff & Mark Bass (exec.)Mr. Porter</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>The Slim Shady LP (1999)</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="{% static '2.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+          <p><b>Studio</b>	Studio 8(Ferndale, Michigan)</p>
+          <p><b>Genre</b>  Hip hop  Horrorcore</p>
+          <p><b>Length</b>	59:39</p>
+          <p><b>Label</b> Aftermath  Interscope</p>
+          <p><b>Producer</b> Dr. Dre  Eminem  Mark & Jeff Bass  Mel-Man</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>The Marshall Mathers LP (2000)</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="{% static '3.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p><b>Studio</b>	The Mix House  Encore  Larrabee  Sound The Record  Plant 54 Sound</p>
+          <p><b>Genre</b> Hardcore hip hop  Horrorcore</p>
+          <p><b>Length</b>	72:04</p>
+          <p><b>Label</b> Aftermath  Interscope</p>
+          <p><b>Producer</b>Dr. Dre (also exec.)  Eminem  Jeff & Mark Bass  Mel-Man  The 45 King</p>
+      </div>
+    </div>
+       <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>The Eminem Show (2002)</strong></p><br>
+      <a href="#demo4" data-toggle="collapse">
+        <img src="{% static '4.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo4" class="collapse">
+        <p><b>Studio</b>	Encore Studios(Detroit, Michigan) Marshall Mathers' House(Detroit, Michigan)  54 Sound Studio(Ferndale, Michigan)</p>
+          <p><b>Genre</b>  Hip hop </p>
+          <p><b>Length</b>	77:28</p>
+          <p><b>Label</b> Aftermath  Interscope  Shady</p>
+          <p><b>Producer</b> Dr. Dre(also exec.)  DJ Head  Eminem  Jeff Bass  Mr. Porter</p>
+      </div>
+    </div>
+             <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Encore (2004)</strong></p><br>
+      <a href="#demo5" data-toggle="collapse">
+        <img src="{% static '5.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo5" class="collapse">
+          <p><b>Genre</b>  Hip hop </p>
+          <p><b>Length</b>	76:53</p>
+          <p><b>Label</b> Aftermath  Interscope  Shady</p>
+          <p><b>Producer</b> Dr. Dre(also exec.  )Eminem  Luis Rest  oMike Elizondo  Mark Batson</p>
+      </div>
+    </div>
+             <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Relapse (2009)</strong></p><br>
+      <a href="#demo6" data-toggle="collapse">
+        <img src="{% static '6.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo6" class="collapse">
+        <p><b>Studio</b>54 Sound, Effigy Studios(Ferndale, Michigan)  KDS Music Studios  Phantom City Studio(Orlando, Florida)  Record One Studios(Sherman Oaks, California)  Studio at the Palms(Las Vegas, Nevada)</p>
+          <p><b>Genre</b>  Hip hop  Horrorcore</p>
+          <p><b>Length</b>	76:05</p>
+          <p><b>Label</b> Aftermath  Interscope  Shady</p>
+          <p><b>Producer</b> Dr. Dre(also exec.  )Doc Ish  Eminem</p>
+      </div>
+    </div>
+             <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Recovery (2010)</strong></p><br>
+      <a href="#demo7" data-toggle="collapse">
+        <img src="{% static '7.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo7" class="collapse">
+          <p><b>Genre</b>  Hip hop  </p>
+          <p><b>Length</b>	76:59</p>
+          <p><b>Label</b> Aftermath  Interscope  Shady</p>
+          <p><b>Producer</b> Alex da KidBoi-1da  Emile  Eminem  DJ Khalil  Dr. Dre(exec.)  Havoc  JG  Jim Jonsin  Jordan Evans  Just Blaze  Magnedo7  Makeba Riddick  Matthew Burnett  Mr. Porter  Nick Brongers  Supa Dups  Script Shepherd</p>
+      </div>
+    </div>
+             <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>The Marshall Mathers LP 2 (2013)</strong></p><br>
+      <a href="#demo8" data-toggle="collapse">
+        <img src="{% static '8.png'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo8" class="collapse">
+          <p><b>Genre</b>  Hip hop</p>
+          <p><b>Length</b>	78:13</p>
+          <p><b>Label</b> Aftermath  Interscope  Shady</p>
+          <p><b>Producer</b> Dr. Dre(exec.)  Rick Rubin(also exec.)  Aalias  Alex da Kid  Cardiak  DJ Khalil  DVLP  Emile  Eminem  Filthy  Frank Dukes  Frequency  Jeff Bhasker  Luis Resto  M-Phazes  S1  Sid  Roams  Streetrunner  Vincent Venditto</p>
+      </div>
+    </div>
+             <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Revival (2017)</strong></p><br>
+      <a href="#demo9" data-toggle="collapse">
+        <img src="{% static '9.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo9" class="collapse">
+          <p><b>Genre</b>  Hip hop  </p>
+          <p><b>Length</b>	77:39</p>
+          <p><b>Label</b> Aftermath  Interscope  Shady</p>
+          <p><b>Producer</b> Dr. Dre (also exec.)Rick Rubin (also exec.)Aalias  Alex da Kid  DJ Khalil  Emile  Eminem  Fredwreck  Frequency  Illa da Producer  Hit-BoyJust Blaze  Luis Resto  Mark Batson  Mr. Porter  Neff-URock Mafia  Scram Jones  Skylar Grey  Trevor Lawrence</p>
+      </div>
+    </div>
+             <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Kamikaze (2018)</strong></p><br>
+      <a href="#demo10" data-toggle="collapse">
+        <img src="{% static '10.jpg'%}"  alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo10" class="collapse">
+        <p><b>Studio</b> Effigy Studios, Detroit, Michigan, United States</p>
+          <p><b>Genre</b>  Hip hop  </p>
+          <p><b>Length</b>	45:49</p>
+          <p><b>Label</b> Aftermath  Interscope  Shady</p>
+          <p><b>Producer</b> Dr. Dre(executive producer) Eminem(also executive) Swish Allnet   Fred Ball   Boi-1da   Illa da Producer   Jeremy Miller   Tay Keith LoneStarrMuzik   Mike Will Made It   Luis Resto   Ronny J   S1   Tim Suby   Jahaan Sweet</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

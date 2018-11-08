@@ -20,23 +20,24 @@
 <script type="text/javascript" src="{% static 'response.js'%}"></script>
 </head>
 <body>
-<!-- A grey horizontal navbar that becomes vertical on small screens -->
-<nav class="navbar navbar-expand-sm bg-light">
 
-  <!-- Links -->
-  <ul class="navbar-nav">
+
+<!-- Links -->
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    </ul>
+    <ul>
         {% if username %}
-            <li class="nav-item"> <a href = "/auth/logout/"> Выйти {{ username }} </a></li>
-
+            <li><a href="/auth/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout {{ username }}</a></li>
         {% else %}
-            <li class="nav-item"><a href="/auth/login/">Войти</a></li>
+            <li><a href="/auth/login/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         {% endif %}
-  </ul>
-
-</nav>
+    </ul>
 
     {% block AllVideos %}{% endblock %}
     {% block OneVideo %}{% endblock %}
     {% block login %} {% endblock %}
+    {% block Biography %}{%endblock%}
+
 </body>
 </html>

@@ -21,4 +21,6 @@ urlpatterns = [
     re_path(r'admin/', admin.site.urls),
     re_path(r'AllVideos/', include("hello.urls_hello")),
     re_path(r'auth/', include("loginlogout.urls_log")),
+    re_path(r'', include("mainpage.urls_main")),
+    re_path(r'Biography/', include("biography.urls_biography"))
 ]

@@ -1,3 +1,40 @@
+<html lang="en">
+<head>
+  <title>All Videos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://127.0.0.1:8000/">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="http://127.0.0.1:8000/">Home</a></li>
+      <li><a href="/AllVideos/"> All Videos </a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/AllVideos/"> Video <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/AllVideos/get/2/">Eminem - Not Afraid</a></li>
+          <li><a href="/AllVideos/get/3/">
+Eminem - The Monster (Explicit) ft. Rihanna</a></li>
+          <li><a href="/AllVideos/get/4/">Eminem - Rap God (Explicit)</a></li>
+          <li><a href="/AllVideos/get/5/">
+Eminem - Lose Yourself [HD]</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>
+
+
 {% extends 'MainTemplates.html' %}
 {% block AllVideos %}
 

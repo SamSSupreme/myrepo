@@ -6,7 +6,9 @@
         {% csrf_token %}
 
             <label for="username"Имя пользователя</label>
+            <h3> Username </h3>
             <input type="text" name="username" id="username">
+            <h3> Password </h3>
             <label for="password"Пароль</label>
             <input type="password" name="password" id="password">
                 {% if login_error %}
